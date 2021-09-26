@@ -1,0 +1,8 @@
+params = {"name":input.key,"idCreator":input.ID};
+header2 = {"Content-Type":"application/json"};
+response = invokeurl
+[
+    url :"https://0fuel4fo03.execute-api.us-east-2.amazonaws.com/dev/uploadimg"
+    type :POST
+    parameters:params.toString()
+];
